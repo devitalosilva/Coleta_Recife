@@ -1,0 +1,185 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+
+ html{
+ scroll-behavior: smooth;
+ }
+
+ body{
+ font-family: Arial, Helvetica, sans-serif;
+ background-color: #3B9759;
+ color: #ffffff;
+ line-height: 1.6;
+ }
+
+ /* ========================= CABEÇALHO ========================== */
+
+ header{
+ width: 100%;
+ background-color: #3B9759;
+ border-bottom: 1px solid #2b2f38;
+ position: sticky;
+ top: 0;
+ z-index: 1000;
+ }
+
+ .menu{
+ width: 90%;
+ max-width: 1200px;
+ margin: auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ min-height: 80px;
+ }
+
+ .logo{
+ font-size: 25px;
+ font-weight: bold;
+ letter-spacing: 3px;
+ }
+
+ .logo span{
+ color:  #0fc94d;
+ }
+
+ nav ul{
+ list-style: none;
+
+ display: flex;
+ gap: 15px;
+ }
+
+ nav a{
+ display: block;
+ padding: 10px 20px;
+ color: white;
+ text-decoration: none;
+ border-radius: 5px;
+ transition: 0.3s;
+ font-size: 18PX;
+ }
+
+ nav a:hover{
+ background-color: #F8F9FA;
+ color: #0FC94D;
+ }
+
+ /*========IMAGEM CENTRO =======*/
+
+ .menu_img{
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+    display: block;
+ } 
+
+  /* ========================= ESTRUTURA DAS SEÇÕES ========================== */
+
+ .container{
+ width: 90%;
+ 
+ 
+ }
+
+ section{
+ padding: 80px 0;
+ display: flex;
+ flex-direction: row !important;
+ align-items: stretch;
+ gap: 20px;
+ justify-content: center;
+ flex-wrap: wrap;
+ }
+
+ .titulo{
+ text-align: center;
+ margin-bottom: 40px;
+ }
+
+ .titulo h2{
+ font-size: 36px;
+ margin-bottom: 10px;
+ }
+
+ .titulo div{
+ width: 70px;
+ height: 4px;
+ background-color: #0FC94D;
+ margin: auto;
+ }
+
+ /* ========================= CONTATOS ========================== */
+
+ .contatos{
+ background-color: #3B9759;
+ text-align: center;
+ }
+
+ .contato-box{
+ width: 300px;
+ height: 300px;
+ margin: auto;
+ background-color: #F8F9FA;
+ padding: 40px;
+ border-radius: 10px;
+ }
+
+ .contato-box p{
+ margin: 10px 0;
+ color: #000000;
+ }
+
+ .contato-box a{
+ color: #c300ff;
+ text-decoration: none;
+ }
+
+ .contato-box h3{
+   color: #000000;
+ } 
+
+ /* ========================= RESPONSIVIDADE ========================== */
+
+ @media(max-width: 800px){
+
+ .menu{
+ flex-direction: column;
+
+ padding: 20px;
+ }
+
+ nav ul{
+ margin-top: 15px;
+ }
+
+ .hero h1{
+ font-size: 42px;
+ }
+
+ }
+
+ @media(max-width: 500px){
+
+ nav ul{
+ flex-direction: column;
+ width: 100%;
+ text-align: center;
+ }
+
+ nav a{
+ background-color: #15181e;
+ font-size: 14px;
+ }
+
+ .hero h1{
+ font-size: 34px;
+ }
+
+ .hero h2{
+ font-size: 18px;
+ }
+ }
