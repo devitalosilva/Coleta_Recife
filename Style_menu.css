@@ -237,7 +237,7 @@ padding: 12px 24px;
  background-color:#013E5A;
 
  border-top:
- 1px solid #ffffff;
+ 1px solid #252932;
 
  padding: 35px 20px;
 
@@ -262,12 +262,11 @@ padding: 12px 24px;
 
 /* ========================= RESPONSIVIDADE ========================== */
 
-@media(max-width: 800px) {
+@media(max-width: 1000px) {
 
   .menu {
     flex-direction: column;
-
-    padding: 20px;
+    padding: 10px;
   }
 
   nav ul {
@@ -278,6 +277,33 @@ padding: 12px 24px;
     font-size: 42px;
   }
 
+  section{
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction:column ;
+  }
+
+  .titulo p{
+    text-align: justify;
+    text-align: center;
+    font-size: 20px;
+  }
+
+ .coluna_menu_2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+  .menu_2 img{
+  width: 100vw;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  }
 }
 
 
@@ -290,7 +316,6 @@ padding: 12px 24px;
   }
 
   nav a {
-    background-color: #15181e;
     font-size: 14px;
   }
 
