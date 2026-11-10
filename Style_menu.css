@@ -40,15 +40,20 @@ header {
   font-size: 25px;
   font-weight: bold;
   letter-spacing: 3px;
+  color: inherit;
 }
 
 .logo span {
   color: #0fc94d;
 }
 
+.logo a{
+  text-decoration: none;
+  color: inherit;
+}
+
 nav ul {
   list-style: none;
-
   display: flex;
   gap: 15px;
 }
@@ -125,7 +130,7 @@ section {
   margin: auto;
 }
 
-/* ========================= MENU 1 ========================== */
+/* ========================= MENU 1 PAGINA(INDEX) ========================== */
 
 .contatos {
   background-color: #3B9759;
@@ -159,7 +164,7 @@ section {
   color: #013E5A;
 }
 
-/*========================== BOTÕES ================================== */
+/*========================== BOTÕES PAGINA ================================== */
 
 .Botao_CTA{
 color: white;
@@ -192,7 +197,7 @@ padding: 12px 24px;
   }
 }
 
-/*========================== MENU 2 =============================*/
+/*========================== MENU 2 PAGINA(INDEX) =============================*/
 .menu_2{
   display: flex;
   flex-direction: column;
@@ -235,12 +240,9 @@ padding: 12px 24px;
 
  footer{
  background-color:#013E5A;
-
  border-top:
  1px solid #252932;
-
  padding: 35px 20px;
-
  text-align: center;
  }
 
@@ -259,6 +261,23 @@ padding: 12px 24px;
  color: #ffffff;
  font-size: 14px;
  }
+
+/* ========================= MENU 1 PAGINA(QUEMSOMOS)================= */
+
+.section2 {
+  text-align: center;
+  display: flex;
+  margin-top: 3rem;
+}
+
+ .container2{
+ background-color:#013E5A;
+ border-top:
+ 1px solid #252932;
+ padding: 35px 40%;
+ text-align: center;
+ }
+
 
 /* ========================= RESPONSIVIDADE ========================== */
 
