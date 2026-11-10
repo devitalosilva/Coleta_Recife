@@ -291,6 +291,7 @@ padding: 12px 24px;
 }
  
  .paragrafo1{
+  display: flex;
   color: white;
   padding: 50px;
   flex: 1;
@@ -299,19 +300,6 @@ padding: 12px 24px;
   text-align: left;
   text-align: justify;
 } 
-   
- 
-
-
-
-
-
-
-
-
-
-
-
 
 /* ========================= MENU 1 PAGINA(OQUEFAZEMOS) ============== */
 .container3{
