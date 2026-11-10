@@ -264,21 +264,30 @@ padding: 12px 24px;
 
 /* ========================= MENU 1 PAGINA(QUEMSOMOS)================= */
 
-.section2 {
-  text-align: center;
-  display: flex;
-  margin-top: 3rem;
-}
-
  .container2{
- background-color:#013E5A;
- border-top:
- 1px solid #252932;
+ background-color:#3c7b51;
  padding: 35px 40%;
  text-align: center;
  }
 
 
+
+
+
+
+
+
+
+
+
+
+
+/* ========================= MENU 1 PAGINA(OQUEFAZEMOS) ============== */
+.container3{
+ background-color:#3c7b51;
+ padding: 35px 40%;
+ text-align: center;
+ }
 /* ========================= RESPONSIVIDADE ========================== */
 
 @media(max-width: 1000px) {
