@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte | Coleta Recife</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body data-raiz="../">
+    <header>
+
+        <div class="barra-conta" data-barra-conta>
+            <div class="barra-conta__conteudo">
+                <a href="login.html">Entrar</a>
+                <a href="criar-conta.html">Criar conta</a>
+            </div>
+        </div>
+
+        <div class="menu">
+
+            <div class="logo">
+                <a href="../index.html">COLETA <span>RECIFE</span></a>
+            </div>
+
+            <nav aria-label="Menu principal">
+
+                <ul>
+                    <li>
+                        <a href="quem-somos.html">QUEM SOMOS</a>
+                    </li>
+
+                    <li>
+                        <a href="o-que-fazemos.html">O QUE FAZEMOS</a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html">BLOG</a>
+                    </li>
+
+                    <li>
+                        <a href="suporte.html" aria-current="page">SUPORTE</a>
+                    </li>
+
+                    <li>
+                        <a href="#">BAIXAR APP</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="faixa-titulo">
+            <h1>SUPORTE</h1>
+        </div>
+
+        <p class="intro">
+            Tire suas dúvidas sobre os horários de coleta, notificações e uso da plataforma,
+            ou envie uma solicitação diretamente para nossa equipe.
+        </p>
+
+        <section class="secao-cartoes" aria-labelledby="titulo-faq">
+            <div class="blog-lista">
+                <h2 id="titulo-faq" class="subtitulo-secao">Perguntas frequentes</h2>
+
+                <article class="cartao cartao--texto artigo">
+                    <span class="etiqueta">Rotas e Horários</span>
+                    <h3>Como saber o dia e horário da coleta na minha rua?</h3>
+                    <details>
+                        <summary>Ver resposta</summary>
+                        <p>Após criar sua conta e cadastrar seu bairro ou endereço, o Coleta Recife exibe os dias da semana e a faixa de horário prevista para a coleta domiciliar e seletiva na sua região.</p>
+                    </details>
+                </article>
+
+                <article class="cartao cartao--texto artigo">
+                    <span class="etiqueta">Notificações</span>
+                    <h3>Com quanto tempo de antecedência recebo os alertas?</h3>
+                    <details>
+                        <summary>Ver resposta</summary>
+                        <p>Os alertas são programados para avisar você antes do início da janela de passagem do caminhão no seu bairro, evitando que os sacos fiquem expostos na calçada por horas.</p>
+                    </details>
+                </article>
+
+                <article class="cartao cartao--texto artigo">
+                    <span class="etiqueta">Conta e Acesso</span>
+                    <h3>Não recebi o e-mail de confirmação de cadastro. O que fazer?</h3>
+                    <details>
+                        <summary>Ver resposta</summary>
+                        <p>Verifique a caixa de spam ou lixo eletrônico do e-mail informado no cadastro. Caso não encontre após 5 minutos, abra um chamado abaixo selecionando a categoria <strong>Conta e acesso ao sistema</strong>.</p>
+                    </details>
+                </article>
+
+                <article class="cartao cartao--texto artigo">
+                    <span class="etiqueta">Coleta Urbana</span>
+                    <h3>O caminhão não passou no horário previsto. Posso relatar aqui?</h3>
+                    <details>
+                        <summary>Ver resposta</summary>
+                        <p>Sim. Utilize o formulário abaixo na categoria <strong>Relatar atraso ou falha na coleta</strong>, informando o bairro e o ponto de referência para registrarmos a ocorrência.</p>
+                    </details>
+                </article>
+            </div>
+        </section>
+
+        <section class="pagina-form" aria-labelledby="titulo-chamado">
+            <div class="cartao-form cartao-form--largo">
+                <h1 id="titulo-chamado">Abrir chamado</h1>
+                <p class="subtitulo">Preencha os campos abaixo. Você receberá um número de protocolo imediatamente.</p>
+
+                <form id="form-suporte" novalidate>
+
+                    <div class="mensagem" data-mensagem role="alert" hidden></div>
+
+                    <div class="campo">
+                        <label for="nome">Nome completo</label>
+                        <input type="text" id="nome" name="nome" autocomplete="name" maxlength="120" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail para retorno</label>
+                        <input type="email" id="email" name="email" autocomplete="email" autocapitalize="none" spellcheck="false" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="celular">Celular / WhatsApp (opcional)</label>
+                        <input type="tel" id="celular" name="celular" autocomplete="tel-national" inputmode="tel" placeholder="(81) 91234-5678">
+                    </div>
+
+                    <div class="campo">
+                        <label for="categoria">Categoria do atendimento</label>
+                        <select id="categoria" name="categoria" required>
+                            <option value="">Selecione uma opção…</option>
+                            <option value="duvida_rota">Dúvida sobre rotas e horários</option>
+                            <option value="atraso_coleta">Relatar atraso ou falha na coleta</option>
+                            <option value="notificacoes">Problemas com notificações</option>
+                            <option value="conta_acesso">Conta e acesso ao sistema</option>
+                            <option value="sugestao">Sugestão ou melhoria</option>
+                            <option value="outro">Outro assunto</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="bairro">Bairro relacionado (opcional)</label>
+                        <select id="bairro" name="bairro">
+                            <option value="">Não se aplica / Outro bairro</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="assunto">Assunto</label>
+                        <input type="text" id="assunto" name="assunto" maxlength="150" placeholder="Resumo rápido da sua solicitação" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="descricao">Descrição detalhada</label>
+                        <textarea id="descricao" name="descricao" rows="5" maxlength="2000" placeholder="Descreva o ocorrido, rua de referência ou dúvida..." required></textarea>
+                        <p class="dica">Mínimo de 10 caracteres (máximo 2.000).</p>
+                    </div>
+
+                    <button type="submit" class="botao-form">Enviar solicitação</button>
+
+                </form>
+            </div>
+        </section>
+
+        <section id="secao-meus-chamados" class="secao-cartoes" hidden aria-labelledby="titulo-meus-chamados">
+            <div class="blog-lista">
+                <h2 id="titulo-meus-chamados" class="subtitulo-secao">Meus chamados recentes</h2>
+                <div id="lista-meus-chamados" class="blog-lista"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+        <h3>
+            COLETA<span>RECIFE</span>
+        </h3>
+
+        <p>
+            © 2026 COLETA RECIFE.
+            Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+    <script src="../js/vendor/supabase.js"></script>
+    <script src="../js/config.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/layout.js"></script>
+    <script src="../js/suporte.js"></script>
+</body>
+
+</html>

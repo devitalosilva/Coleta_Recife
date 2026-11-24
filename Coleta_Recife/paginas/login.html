@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar | Coleta Recife</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body data-raiz="../">
+    <header>
+
+        <div class="barra-conta" data-barra-conta>
+            <div class="barra-conta__conteudo">
+                <a href="login.html">Entrar</a>
+                <a href="criar-conta.html">Criar conta</a>
+            </div>
+        </div>
+
+        <div class="menu">
+
+            <div class="logo">
+                <a href="../index.html">COLETA <span>RECIFE</span></a>
+            </div>
+
+            <nav aria-label="Menu principal">
+
+                <ul>
+                    <li>
+                        <a href="quem-somos.html">QUEM SOMOS</a>
+                    </li>
+
+                    <li>
+                        <a href="o-que-fazemos.html">O QUE FAZEMOS</a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html">BLOG</a>
+                    </li>
+
+                    <li>
+                        <a href="suporte.html">SUPORTE</a>
+                    </li>
+
+                    <li>
+                        <a href="#">BAIXAR APP</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="pagina-form">
+        <div class="cartao-form">
+            <h1>Entrar</h1>
+            <p class="subtitulo">Acesse sua conta do Coleta Recife.</p>
+
+            <form id="form-login" novalidate>
+
+                <div class="mensagem" data-mensagem role="alert" hidden></div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" autocomplete="email" autocapitalize="none" spellcheck="false" required>
+                </div>
+
+                <div class="campo">
+                    <label for="senha">Senha</label>
+                    <div class="campo__senha">
+                        <input type="password" id="senha" name="senha" autocomplete="current-password" required>
+                        <button type="button" data-alternar-senha aria-label="Mostrar senha">Mostrar</button>
+                    </div>
+                </div>
+
+                <button type="submit" class="botao-form">Entrar</button>
+
+            </form>
+
+            <p class="link-alternativo">Ainda não tem conta? <a href="criar-conta.html">Criar conta</a></p>
+        </div>
+    </main>
+
+    <footer>
+
+        <h3>
+            COLETA<span>RECIFE</span>
+        </h3>
+
+        <p>
+            © 2026 COLETA RECIFE.
+            Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+    <script src="../js/vendor/supabase.js"></script>
+    <script src="../js/config.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/layout.js"></script>
+    <script src="../js/formularios.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Coleta Recife</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body data-raiz="../">
+    <header>
+
+        <div class="barra-conta" data-barra-conta>
+            <div class="barra-conta__conteudo">
+                <a href="login.html">Entrar</a>
+                <a href="criar-conta.html">Criar conta</a>
+            </div>
+        </div>
+
+        <div class="menu">
+
+            <div class="logo">
+                <a href="../index.html">COLETA <span>RECIFE</span></a>
+            </div>
+
+            <nav aria-label="Menu principal">
+
+                <ul>
+                    <li>
+                        <a href="quem-somos.html">QUEM SOMOS</a>
+                    </li>
+
+                    <li>
+                        <a href="o-que-fazemos.html">O QUE FAZEMOS</a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html" aria-current="page">BLOG</a>
+                    </li>
+
+                    <li>
+                        <a href="#">SUPORTE</a>
+                    </li>
+
+                    <li>
+                        <a href="#">BAIXAR APP</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="faixa-titulo">
+            <h1>BLOG</h1>
+        </div>
+
+        <p class="intro">
+            Dicas, novidades do projeto e informações sobre a coleta de resíduos.
+        </p>
+
+        <section class="secao-cartoes">
+            <div class="blog-lista">
+
+                <!--
+                    POSTS DE EXEMPLO. Para publicar um novo post, copie um bloco
+                    <article> inteiro, cole no topo da lista e troque os textos.
+                -->
+
+                <article class="cartao cartao--texto artigo">
+                    <span class="etiqueta">Dicas</span>
+                    <h2>Como separar o lixo em casa</h2>
+                    <p class="artigo__resumo">Separar o lixo seco do orgânico já facilita o trabalho da coleta e da reciclagem.</p>
+                    <details>
+                        <summary>Ler artigo completo</summary>
+                        <p>Comece com duas sacolas: uma para o lixo seco (papel, plástico e metal limpos) e outra para o lixo orgânico (restos de comida, cascas e borra de café).</p>
+                        <p>Enxágue rapidamente as embalagens para evitar mau cheiro e a presença de insetos. O que não pode ser reciclado, como papel higiênico usado, vai para o rejeito.</p>
+                        <p>Confira com a prefeitura como funciona a coleta seletiva no seu bairro.</p>
+                    </details>
+                </article>
+
+                <article class="cartao cartao--texto artigo">
+                    <span class="etiqueta">Coleta</span>
+                    <h2>Por que o horário da coleta importa</h2>
+                    <p class="artigo__resumo">Colocar o lixo para fora na hora certa mantém a rua mais limpa.</p>
+                    <details>
+                        <summary>Ler artigo completo</summary>
+                        <p>Deixar o lixo na calçada com muita antecedência facilita que sacos sejam rasgados por animais e que resíduos se espalhem, chegando a entupir bueiros em dias de chuva.</p>
+                        <p>É por isso que o Coleta Recife quer avisar você antes da chegada das equipes.</p>
+                    </details>
+                </article>
+
+                <article class="cartao cartao--texto artigo">
+                    <span class="etiqueta">Projeto</span>
+                    <h2>O Coleta Recife está em construção</h2>
+                    <p class="artigo__resumo">Estamos desenvolvendo o site e o aplicativo, e as novidades vão aparecer aqui.</p>
+                    <details>
+                        <summary>Ler artigo completo</summary>
+                        <p>Estamos desenvolvendo as ferramentas que vão mostrar rotas, dias e horários da coleta de resíduos.</p>
+                        <p>Novas funções chegam em breve. Enquanto isso, você já pode criar sua conta e acompanhar o projeto.</p>
+                    </details>
+                </article>
+
+            </div>
+        </section>
+
+        <div class="acao-final">
+            <a class="Botao_CTA" href="criar-conta.html">Criar conta</a>
+        </div>
+    </main>
+
+    <footer>
+
+        <h3>
+            COLETA<span>RECIFE</span>
+        </h3>
+
+        <p>
+            © 2026 COLETA RECIFE.
+            Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+    <script src="../js/vendor/supabase.js"></script>
+    <script src="../js/config.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/layout.js"></script>
+</body>
+
+</html>
